@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Replace a color</string>
+   <string>Заменить цвет</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -32,7 +32,7 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Original Color:</string>
+        <string>Исходный цвет:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -56,7 +56,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>New Color:</string>
+        <string>Новый цвет:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -78,7 +78,7 @@
    <item>
     <widget class="QRadioButton" name="stitchesAndBackground">
      <property name="text">
-      <string>Stitches and Background</string>
+      <string>Петли и фон</string>
      </property>
      <property name="checked">
       <bool>true</bool>
@@ -88,14 +88,14 @@
    <item>
     <widget class="QRadioButton" name="stitchesOnly">
      <property name="text">
-      <string>Stitches only</string>
+      <string>Только петли</string>
      </property>
     </widget>
    </item>
    <item>
     <widget class="QRadioButton" name="backgroundOnly">
      <property name="text">
-      <string>Background only</string>
+      <string>Только фон</string>
      </property>
     </widget>
    </item>

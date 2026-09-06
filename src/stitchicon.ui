@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Stitch Icon List</string>
+   <string>Список значков петель</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
@@ -41,7 +41,7 @@
      <item>
       <widget class="QPushButton" name="addIcon">
        <property name="text">
-        <string>Add Icons</string>
+        <string>Добавить значки</string>
        </property>
       </widget>
      </item>
@@ -51,7 +51,7 @@
         <bool>false</bool>
        </property>
        <property name="text">
-        <string>Remove Icons</string>
+        <string>Удалить значки</string>
        </property>
       </widget>
      </item>
@@ -61,7 +61,7 @@
         <bool>false</bool>
        </property>
        <property name="text">
-        <string>Export Icons</string>
+        <string>Экспортировать значки</string>
        </property>
       </widget>
      </item>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Rows and Stitches</string>
+   <string>Ряды и петли</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
@@ -24,7 +24,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Rows:</string>
+       <string>Ряды:</string>
       </property>
      </widget>
     </item>
@@ -37,14 +37,14 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Stitches:</string>
+       <string>Петли:</string>
       </property>
      </widget>
     </item>
     <item row="3" column="0" rowspan="2">
      <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>Align:</string>
+       <string>Выравнивание:</string>
       </property>
      </widget>
     </item>
@@ -53,7 +53,7 @@
       <item>
        <widget class="QRadioButton" name="alignTop">
         <property name="toolTip">
-         <string>Align Top</string>
+         <string>Выровнять по верхнему краю</string>
         </property>
         <property name="text">
          <string/>
@@ -63,7 +63,7 @@
       <item>
        <widget class="QRadioButton" name="alignCenterV">
         <property name="toolTip">
-         <string>Align Center Vertical</string>
+         <string>Выровнять по центру по вертикали</string>
         </property>
         <property name="text">
          <string/>
@@ -73,7 +73,7 @@
       <item>
        <widget class="QRadioButton" name="alignBottom">
         <property name="toolTip">
-         <string>Align Bottom</string>
+         <string>Выровнять по нижнему краю</string>
         </property>
         <property name="text">
          <string/>
@@ -87,7 +87,7 @@
       <item>
        <widget class="QRadioButton" name="alignLeft">
         <property name="toolTip">
-         <string>Align Left</string>
+         <string>Выровнять по левому краю</string>
         </property>
         <property name="text">
          <string/>
@@ -97,7 +97,7 @@
       <item>
        <widget class="QRadioButton" name="alignCenterH">
         <property name="toolTip">
-         <string>Align Center Horizontal</string>
+         <string>Выровнять по центру по горизонтали</string>
         </property>
         <property name="text">
          <string/>
@@ -107,7 +107,7 @@
       <item>
        <widget class="QRadioButton" name="alignRight">
         <property name="toolTip">
-         <string>Align Right</string>
+         <string>Выровнять по правому краю</string>
         </property>
         <property name="text">
          <string/>
@@ -125,7 +125,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Spacing</string>
+       <string>Интервал</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -141,7 +141,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Row:</string>
+       <string>Ряд:</string>
       </property>
      </widget>
     </item>
@@ -154,7 +154,7 @@
        </sizepolicy>
       </property>
       <property name="text">
-       <string>Stitches:</string>
+       <string>Петли:</string>
       </property>
      </widget>
     </item>
@@ -181,27 +181,27 @@
     <item row="8" column="0" colspan="2">
      <widget class="QCheckBox" name="createGrid">
       <property name="text">
-       <string>Create Rows</string>
+       <string>Создать ряды</string>
       </property>
      </widget>
     </item>
     <item row="9" column="0" colspan="2">
      <widget class="QPushButton" name="createGridBttn">
       <property name="toolTip">
-       <string>Create a grid with new cells</string>
+       <string>Создать сетку с новыми ячейками</string>
       </property>
       <property name="text">
-       <string>Create</string>
+       <string>Создать</string>
       </property>
      </widget>
     </item>
     <item row="9" column="3">
      <widget class="QPushButton" name="arrangeBttn">
       <property name="toolTip">
-       <string>Arrange the selected cells into a grid</string>
+       <string>Расположить выбранные ячейки по сетке</string>
       </property>
       <property name="text">
-       <string>Arrange</string>
+       <string>Расположить</string>
       </property>
      </widget>
     </item>
@@ -234,7 +234,7 @@
     <item row="3" column="3">
      <widget class="QLabel" name="label_5">
       <property name="text">
-       <string>Align:</string>
+       <string>Выравнивание:</string>
       </property>
      </widget>
     </item>

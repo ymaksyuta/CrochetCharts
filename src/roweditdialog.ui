@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Форма</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="margin">
@@ -20,7 +20,7 @@
    <item>
     <widget class="QGroupBox" name="createRows">
      <property name="title">
-      <string>Edit Rows</string>
+      <string>Редактировать ряды</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <property name="margin">
@@ -92,7 +92,7 @@
       <item row="2" column="6">
        <widget class="QPushButton" name="updateRow">
         <property name="text">
-         <string>Update Row</string>
+         <string>Обновить ряд</string>
         </property>
        </widget>
       </item>
@@ -101,7 +101,7 @@
         <item>
          <widget class="QLabel" name="label">
           <property name="text">
-           <string>Row Text:</string>
+           <string>Текст ряда:</string>
           </property>
          </widget>
         </item>

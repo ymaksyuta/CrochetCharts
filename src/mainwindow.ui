@@ -39,7 +39,7 @@
       <item>
        <widget class="QGroupBox" name="newDocument">
         <property name="title">
-         <string>New Chart Options</string>
+         <string>Параметры новой диаграммы</string>
         </property>
         <layout class="QGridLayout" name="gridLayout">
          <property name="margin">
@@ -48,7 +48,7 @@
          <item row="1" column="2">
           <widget class="QLabel" name="stitchesLbl">
            <property name="text">
-            <string>Stitches:</string>
+            <string>Петли:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -86,7 +86,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="label_6">
            <property name="text">
-            <string>Chart Style:</string>
+            <string>Стиль диаграммы:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -100,17 +100,17 @@
           <widget class="QComboBox" name="chartStyle">
            <item>
             <property name="text">
-             <string>Blank</string>
+             <string>Пусто</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Rows</string>
+             <string>Ряды</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>Rounds</string>
+             <string>Круговые ряды</string>
             </property>
            </item>
           </widget>
@@ -118,7 +118,7 @@
          <item row="2" column="0">
           <widget class="QLabel" name="rowSpacingLbl">
            <property name="text">
-            <string>Row Spacing:</string>
+            <string>Интервал между рядами:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -138,32 +138,32 @@
            </property>
            <item>
             <property name="text">
-             <string>1 Chain</string>
+             <string>1 воздушная петля</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>2 Chains</string>
+             <string>2 воздушные петли</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>3 Chains</string>
+             <string>3 воздушные петли</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>4 Chains</string>
+             <string>4 воздушные петли</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>5 Chains</string>
+             <string>5 воздушных петель</string>
             </property>
            </item>
            <item>
             <property name="text">
-             <string>6 Chains</string>
+             <string>6 воздушных петель</string>
             </property>
            </item>
           </widget>
@@ -171,7 +171,7 @@
          <item row="1" column="0">
           <widget class="QLabel" name="rowsLbl">
            <property name="text">
-            <string>Rows:</string>
+            <string>Ряды:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -203,7 +203,7 @@
          <item row="2" column="2">
           <widget class="QLabel" name="defaultStitchLbl">
            <property name="text">
-            <string>Default Stitch:</string>
+            <string>Петля по умолчанию:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -229,14 +229,14 @@
          <item row="0" column="3" colspan="3">
           <widget class="QLineEdit" name="chartTitle">
            <property name="text">
-            <string>Chart</string>
+            <string>Диаграмма</string>
            </property>
           </widget>
          </item>
          <item row="0" column="2">
           <widget class="QLabel" name="label_4">
            <property name="text">
-            <string>Chart Title:</string>
+            <string>Название диаграммы:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -259,7 +259,7 @@
          <item row="1" column="4">
           <widget class="QLabel" name="increaseByLbl">
            <property name="text">
-            <string>Increase By:</string>
+            <string>Увеличивать на:</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -303,11 +303,11 @@
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>&amp;File</string>
+     <string>&amp;Файл</string>
     </property>
     <widget class="QMenu" name="menuOpenRecent">
      <property name="title">
-      <string>Open &amp;Recent</string>
+      <string>Открыть &amp;недавние</string>
      </property>
     </widget>
     <addaction name="actionNew"/>
@@ -325,11 +325,11 @@
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>&amp;Edit</string>
+     <string>&amp;Правка</string>
     </property>
     <widget class="QMenu" name="menuInsert">
      <property name="title">
-      <string>&amp;Insert</string>
+      <string>&amp;Вставка</string>
      </property>
      <addaction name="actionInsertImage"/>
     </widget>
@@ -340,7 +340,7 @@
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
-     <string>&amp;View</string>
+     <string>&amp;Вид</string>
     </property>
     <addaction name="actionZoomIn"/>
     <addaction name="actionZoomOut"/>
@@ -361,11 +361,11 @@
    </widget>
    <widget class="QMenu" name="menuChart">
     <property name="title">
-     <string>&amp;Charts</string>
+     <string>&amp;Диаграммы</string>
     </property>
     <widget class="QMenu" name="menuGrid">
      <property name="title">
-      <string>Grid</string>
+      <string>Сетка</string>
      </property>
      <addaction name="actionGridNone"/>
      <addaction name="actionGridSquare"/>
@@ -383,7 +383,7 @@
    </widget>
    <widget class="QMenu" name="menuTools">
     <property name="title">
-     <string>&amp;Tools</string>
+     <string>&amp;Инструменты</string>
     </property>
     <addaction name="actionStitchLibrary"/>
     <addaction name="actionCheckForUpdates"/>
@@ -392,7 +392,7 @@
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>&amp;Help</string>
+     <string>&amp;Справка</string>
     </property>
     <addaction name="actionCrochetHelp"/>
     <addaction name="separator"/>
@@ -400,7 +400,7 @@
    </widget>
    <widget class="QMenu" name="menuModes">
     <property name="title">
-     <string>&amp;Modes</string>
+     <string>&amp;Режимы</string>
     </property>
     <addaction name="actionStitchMode"/>
     <addaction name="actionColorMode"/>
@@ -415,7 +415,7 @@
    </widget>
    <widget class="QMenu" name="menuStitches">
     <property name="title">
-     <string>&amp;Stitches</string>
+     <string>&amp;Петли</string>
     </property>
     <addaction name="actionGroup"/>
     <addaction name="actionUngroup"/>
@@ -437,7 +437,7 @@
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <property name="windowTitle">
-    <string>Main Toolbar</string>
+    <string>Основная панель инструментов</string>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -453,7 +453,7 @@
   </widget>
   <widget class="QDockWidget" name="patternStitchesDock">
    <property name="windowTitle">
-    <string>Pattern Stitches</string>
+    <string>Петли узора</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -514,7 +514,7 @@
   </widget>
   <widget class="QDockWidget" name="patternColorsDock">
    <property name="windowTitle">
-    <string>Pattern Colors</string>
+    <string>Цвета узора</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -544,7 +544,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Stitch</string>
+          <string>Петля</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -560,7 +560,7 @@
           </size>
          </property>
          <property name="text">
-          <string>Background</string>
+          <string>Фон</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -626,7 +626,7 @@
     </sizepolicy>
    </property>
    <property name="windowTitle">
-    <string>Stitches</string>
+    <string>Петли</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -647,14 +647,14 @@
           <string/>
          </property>
          <property name="placeholderText">
-          <string>Filter</string>
+          <string>Фильтр</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QToolButton" name="clearBttn">
          <property name="toolTip">
-          <string>Clear text</string>
+          <string>Очистить текст</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -712,7 +712,7 @@
   </widget>
   <widget class="QToolBar" name="editModeToolBar">
    <property name="windowTitle">
-    <string>Edit Mode Toolbar</string>
+    <string>Панель режимов редактирования</string>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -742,7 +742,7 @@
   </widget>
   <widget class="QDockWidget" name="layersDock">
    <property name="windowTitle">
-    <string>Layers</string>
+    <string>Слои</string>
    </property>
    <attribute name="dockWidgetArea">
     <number>2</number>
@@ -763,7 +763,7 @@
        <item>
         <widget class="QLineEdit" name="layerName">
          <property name="text">
-          <string>New Layer</string>
+          <string>Новый слой</string>
          </property>
         </widget>
        </item>
@@ -839,10 +839,10 @@
      <normaloff>:/images/filenew.png</normaloff>:/images/filenew.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;New</string>
+    <string>&amp;Новый</string>
    </property>
    <property name="toolTip">
-    <string>Create a new pattern</string>
+    <string>Создать новый узор</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>
@@ -854,10 +854,10 @@
      <normaloff>:/images/fileopen.png</normaloff>:/images/fileopen.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Open...</string>
+    <string>&amp;Открыть...</string>
    </property>
    <property name="toolTip">
-    <string>Open an existing pattern</string>
+    <string>Открыть существующий узор</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -869,10 +869,10 @@
      <normaloff>:/images/filesave.png</normaloff>:/images/filesave.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Save</string>
+    <string>&amp;Сохранить</string>
    </property>
    <property name="toolTip">
-    <string>Save the current pattern</string>
+    <string>Сохранить текущий узор</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+S</string>
@@ -880,10 +880,10 @@
   </action>
   <action name="actionSaveAs">
    <property name="text">
-    <string>Save &amp;As</string>
+    <string>Сохранить &amp;как</string>
    </property>
    <property name="toolTip">
-    <string>Save the current pattern under another name</string>
+    <string>Сохранить текущий узор под другим именем</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+S</string>
@@ -895,10 +895,10 @@
      <normaloff>:/images/export.svg</normaloff>:/images/export.svg</iconset>
    </property>
    <property name="text">
-    <string>E&amp;xport...</string>
+    <string>&amp;Экспорт...</string>
    </property>
    <property name="toolTip">
-    <string>Export parts of the pattern to other file types</string>
+    <string>Экспортировать части узора в другие форматы файлов</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+X</string>
@@ -906,10 +906,10 @@
   </action>
   <action name="actionQuit">
    <property name="text">
-    <string>&amp;Quit</string>
+    <string>&amp;Выход</string>
    </property>
    <property name="toolTip">
-    <string>Close this pattern</string>
+    <string>Закрыть этот узор</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Q</string>
@@ -917,7 +917,7 @@
   </action>
   <action name="actionCut">
    <property name="text">
-    <string>Cu&amp;t</string>
+    <string>Вы&amp;резать</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+X</string>
@@ -925,7 +925,7 @@
   </action>
   <action name="actionCopy">
    <property name="text">
-    <string>&amp;Copy</string>
+    <string>&amp;Копировать</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+C</string>
@@ -933,7 +933,7 @@
   </action>
   <action name="actionPaste">
    <property name="text">
-    <string>&amp;Paste</string>
+    <string>&amp;Вставить</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+V</string>
@@ -941,12 +941,12 @@
   </action>
   <action name="actionAbout">
    <property name="text">
-    <string>&amp;About Crochet Charts</string>
+    <string>&amp;О программе Crochet Charts</string>
    </property>
   </action>
   <action name="actionOptions">
    <property name="text">
-    <string>&amp;Options...</string>
+    <string>&amp;Параметры...</string>
    </property>
    <property name="shortcut">
     <string>Alt+O</string>
@@ -958,10 +958,10 @@
      <normaloff>:/images/new_chart.svg</normaloff>:/images/new_chart.svg</iconset>
    </property>
    <property name="text">
-    <string>&amp;Add Chart</string>
+    <string>&amp;Добавить диаграмму</string>
    </property>
    <property name="toolTip">
-    <string>Add a chart to the current pattern</string>
+    <string>Добавить диаграмму в текущий узор</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+N</string>
@@ -969,7 +969,7 @@
   </action>
   <action name="actionZoomIn">
    <property name="text">
-    <string>Zoom &amp;In</string>
+    <string>&amp;Увеличить</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+=</string>
@@ -977,7 +977,7 @@
   </action>
   <action name="actionZoomOut">
    <property name="text">
-    <string>Zoom &amp;Out</string>
+    <string>&amp;Уменьшить</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+-</string>
@@ -985,7 +985,7 @@
   </action>
   <action name="actionStitchLibrary">
    <property name="text">
-    <string>&amp;Stitch Library</string>
+    <string>&amp;Библиотека петель</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+L</string>
@@ -996,15 +996,15 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>S&amp;how All Stitches</string>
+    <string>Показать &amp;все петли</string>
    </property>
    <property name="toolTip">
-    <string>Show the complete list of stitches</string>
+    <string>Показать полный список петель</string>
    </property>
   </action>
   <action name="actionCrochetHelp">
    <property name="text">
-    <string>&amp;Crochet Charts Help</string>
+    <string>&amp;Справка Crochet Charts</string>
    </property>
    <property name="shortcut">
     <string>F1</string>
@@ -1015,10 +1015,10 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Full Screen Mode</string>
+    <string>&amp;Полноэкранный режим</string>
    </property>
    <property name="toolTip">
-    <string>Make the application use the entire screen</string>
+    <string>Развернуть приложение на весь экран</string>
    </property>
    <property name="shortcut">
     <string>F11</string>
@@ -1029,10 +1029,10 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show &amp;Pattern Stitches</string>
+    <string>Показать &amp;петли узора</string>
    </property>
    <property name="toolTip">
-    <string>Show the stitches used in this pattern</string>
+    <string>Показать петли, используемые в этом узоре</string>
    </property>
   </action>
   <action name="actionShowPatternColors">
@@ -1040,23 +1040,23 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show Pattern &amp;Colors</string>
+    <string>Показать &amp;цвета узора</string>
    </property>
    <property name="toolTip">
-    <string>Show the colors used in this pattern</string>
+    <string>Показать цвета, используемые в этом узоре</string>
    </property>
   </action>
   <action name="actionEditName">
    <property name="text">
-    <string>&amp;Edit Name...</string>
+    <string>&amp;Изменить имя...</string>
    </property>
    <property name="toolTip">
-    <string>Edit the name of the current chart</string>
+    <string>Изменить имя текущей диаграммы</string>
    </property>
   </action>
   <action name="actionPrint">
    <property name="text">
-    <string>&amp;Print...</string>
+    <string>&amp;Печать...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+P</string>
@@ -1064,7 +1064,7 @@
   </action>
   <action name="actionPrintPreview">
    <property name="text">
-    <string>Pr&amp;int Preview...</string>
+    <string>Пре&amp;дпросмотр печати...</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+P</string>
@@ -1072,15 +1072,15 @@
   </action>
   <action name="actionCheckForUpdates">
    <property name="text">
-    <string>&amp;Check for Updates</string>
+    <string>&amp;Проверить обновления</string>
    </property>
   </action>
   <action name="actionRemoveTab">
    <property name="text">
-    <string>&amp;Remove Chart</string>
+    <string>&amp;Удалить диаграмму</string>
    </property>
    <property name="toolTip">
-    <string>Remove chart from this document</string>
+    <string>Удалить диаграмму из этого документа</string>
    </property>
   </action>
   <action name="actionStitchMode">
@@ -1092,10 +1092,10 @@
      <normaloff>:/images/stitch_mode.svg</normaloff>:/images/stitch_mode.svg</iconset>
    </property>
    <property name="text">
-    <string>Stitch Edit</string>
+    <string>Редактирование петли</string>
    </property>
    <property name="toolTip">
-    <string>Add or edit the stitches used on the chart</string>
+    <string>Добавить или изменить петли, используемые на диаграмме</string>
    </property>
    <property name="shortcut">
     <string>D</string>
@@ -1106,7 +1106,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show &amp;Main Toolbar</string>
+    <string>Показать &amp;основную панель инструментов</string>
    </property>
   </action>
   <action name="actionShowEditModeToolbar">
@@ -1114,7 +1114,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show &amp;Edit Mode Toolbar</string>
+    <string>Показать панель режимов &amp;редактирования</string>
    </property>
   </action>
   <action name="actionShowUndoHistory">
@@ -1122,7 +1122,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show &amp;Undo History</string>
+    <string>Показать &amp;историю отмены</string>
    </property>
   </action>
   <action name="actionAngleMode">
@@ -1134,10 +1134,10 @@
      <normaloff>:/images/rotate_stitch.svg</normaloff>:/images/rotate_stitch.svg</iconset>
    </property>
    <property name="text">
-    <string>Rotation Edit</string>
+    <string>Редактирование поворота</string>
    </property>
    <property name="toolTip">
-    <string>Change the angle of stitches on the chart</string>
+    <string>Изменить угол наклона петель на диаграмме</string>
    </property>
    <property name="shortcut">
     <string>R</string>
@@ -1152,10 +1152,10 @@
      <normaloff>:/images/scale_mode.svg</normaloff>:/images/scale_mode.svg</iconset>
    </property>
    <property name="text">
-    <string>Scale Edit</string>
+    <string>Редактирование масштаба</string>
    </property>
    <property name="toolTip">
-    <string>Edit the scale of the stitches on the chart</string>
+    <string>Изменить масштаб петель на диаграмме</string>
    </property>
    <property name="shortcut">
     <string>S</string>
@@ -1170,10 +1170,10 @@
      <normaloff>:/images/indicator.svg</normaloff>:/images/indicator.svg</iconset>
    </property>
    <property name="text">
-    <string>Indicator Edit</string>
+    <string>Редактирование индикатора</string>
    </property>
    <property name="toolTip">
-    <string>Add indicators to the chart</string>
+    <string>Добавить индикаторы на диаграмму</string>
    </property>
    <property name="shortcut">
     <string>I</string>
@@ -1188,10 +1188,10 @@
      <normaloff>:/images/row_edit.svg</normaloff>:/images/row_edit.svg</iconset>
    </property>
    <property name="text">
-    <string>Row Edit</string>
+    <string>Редактирование ряда</string>
    </property>
    <property name="toolTip">
-    <string>Add and edit rows</string>
+    <string>Добавление и редактирование рядов</string>
    </property>
    <property name="shortcut">
     <string>W</string>
@@ -1206,10 +1206,10 @@
      <normaloff>:/images/align_distribute.svg</normaloff>:/images/align_distribute.svg</iconset>
    </property>
    <property name="text">
-    <string>&amp;Show Align and Distribute</string>
+    <string>&amp;Показать выравнивание и распределение</string>
    </property>
    <property name="toolTip">
-    <string>Show Align and Distribute</string>
+    <string>Показать выравнивание и распределение</string>
    </property>
    <property name="shortcut">
     <string>Shift+F7</string>
@@ -1224,10 +1224,10 @@
      <normaloff>:/images/rows_columns.svg</normaloff>:/images/rows_columns.svg</iconset>
    </property>
    <property name="text">
-    <string>Show Rows and Stitches</string>
+    <string>Показать ряды и петли</string>
    </property>
    <property name="toolTip">
-    <string>Show Rows and Stitches</string>
+    <string>Показать ряды и петли</string>
    </property>
   </action>
   <action name="actionShowMirrorDock">
@@ -1239,7 +1239,7 @@
      <normaloff>:/images/mirror_rotate.svg</normaloff>:/images/mirror_rotate.svg</iconset>
    </property>
    <property name="text">
-    <string>Show &amp;Mirror and Rotate</string>
+    <string>Показать &amp;отражение и поворот</string>
    </property>
    <property name="shortcut">
     <string>Shift+F8</string>
@@ -1251,7 +1251,7 @@
      <normaloff>:/images/group.svg</normaloff>:/images/group.svg</iconset>
    </property>
    <property name="text">
-    <string>&amp;Group</string>
+    <string>&amp;Группировать</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+G</string>
@@ -1263,7 +1263,7 @@
      <normaloff>:/images/ungroup.svg</normaloff>:/images/ungroup.svg</iconset>
    </property>
    <property name="text">
-    <string>&amp;Ungroup</string>
+    <string>&amp;Разгруппировать</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+G</string>
@@ -1274,7 +1274,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Show Chart Center</string>
+    <string>&amp;Показать центр диаграммы</string>
    </property>
   </action>
   <action name="actionShowProperties">
@@ -1282,7 +1282,7 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>&amp;Show Properties</string>
+    <string>&amp;Показать свойства</string>
    </property>
    <property name="shortcut">
     <string>P</string>
@@ -1290,15 +1290,15 @@
   </action>
   <action name="actionReplaceStitch">
    <property name="text">
-    <string>&amp;Replace stitches...</string>
+    <string>&amp;Заменить петли...</string>
    </property>
   </action>
   <action name="actionColorReplacer">
    <property name="text">
-    <string>Replace a &amp;color...</string>
+    <string>Заменить &amp;цвет...</string>
    </property>
    <property name="toolTip">
-    <string>Replace one color with another</string>
+    <string>Заменить один цвет другим</string>
    </property>
   </action>
   <action name="actionColorMode">
@@ -1310,10 +1310,10 @@
      <normaloff>:/images/fill_color.svg</normaloff>:/images/fill_color.svg</iconset>
    </property>
    <property name="text">
-    <string>Color Edit</string>
+    <string>Редактирование цвета</string>
    </property>
    <property name="toolTip">
-    <string>Edit the colors used on the chart</string>
+    <string>Изменить цвета, используемые на диаграмме</string>
    </property>
    <property name="shortcut">
     <string>C</string>
@@ -1328,7 +1328,7 @@
      <normaloff>:/images/resize.svg</normaloff>:/images/resize.svg</iconset>
    </property>
    <property name="text">
-    <string>Resi&amp;ze</string>
+    <string>Изменить &amp;размер</string>
    </property>
   </action>
   <action name="actionShowLayers">
@@ -1336,18 +1336,18 @@
     <bool>true</bool>
    </property>
    <property name="text">
-    <string>Show &amp;Layers</string>
+    <string>Показать &amp;слои</string>
    </property>
    <property name="toolTip">
-    <string>Shows the layers dock</string>
+    <string>Показывает панель слоёв</string>
    </property>
   </action>
   <action name="actionInsertImage">
    <property name="text">
-    <string>&amp;Image</string>
+    <string>&amp;Изображение</string>
    </property>
    <property name="toolTip">
-    <string>Insert an image</string>
+    <string>Вставить изображение</string>
    </property>
   </action>
   <action name="actionBoxSelectMode">
@@ -1359,7 +1359,7 @@
      <normaloff>:/images/box_select.svg</normaloff>:/images/box_select.svg</iconset>
    </property>
    <property name="text">
-    <string>&amp;Box select</string>
+    <string>&amp;Выделение рамкой</string>
    </property>
   </action>
   <action name="actionLassoSelectMode">
@@ -1371,7 +1371,7 @@
      <normaloff>:/images/lasso_select.svg</normaloff>:/images/lasso_select.svg</iconset>
    </property>
    <property name="text">
-    <string>Lass&amp;o select</string>
+    <string>Выделение &amp;лассо</string>
    </property>
   </action>
   <action name="actionLineSelectMode">
@@ -1383,7 +1383,7 @@
      <normaloff>:/images/line_select.svg</normaloff>:/images/line_select.svg</iconset>
    </property>
    <property name="text">
-    <string>Line select</string>
+    <string>Выделение линией</string>
    </property>
   </action>
   <action name="actionGridNone">
@@ -1395,10 +1395,10 @@
      <normaloff>:/images/grid_none.svg</normaloff>:/images/grid_none.svg</iconset>
    </property>
    <property name="text">
-    <string>No grid</string>
+    <string>Без сетки</string>
    </property>
    <property name="toolTip">
-    <string>No grid</string>
+    <string>Без сетки</string>
    </property>
   </action>
   <action name="actionGridSquare">
@@ -1410,7 +1410,7 @@
      <normaloff>:/images/grid_square.svg</normaloff>:/images/grid_square.svg</iconset>
    </property>
    <property name="text">
-    <string>Square grid</string>
+    <string>Квадратная сетка</string>
    </property>
   </action>
   <action name="actionGridRound">
@@ -1422,7 +1422,7 @@
      <normaloff>:/images/grid_round.svg</normaloff>:/images/grid_round.svg</iconset>
    </property>
    <property name="text">
-    <string>Round grid</string>
+    <string>Круговая сетка</string>
    </property>
   </action>
   <action name="actionGridTriangle">
@@ -1434,7 +1434,7 @@
      <normaloff>:/images/grid_triangle.svg</normaloff>:/images/grid_triangle.svg</iconset>
    </property>
    <property name="text">
-    <string>Triangular gid</string>
+    <string>Треугольная сетка</string>
    </property>
   </action>
   <action name="actionNextSelectMode">

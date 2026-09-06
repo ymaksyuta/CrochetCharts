@@ -11,20 +11,20 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Align and Distribute</string>
+   <string>Выравнивание и распределение</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="title">
-       <string>Align</string>
+       <string>Выравнивание</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
        <item row="0" column="0">
         <widget class="QToolButton" name="alignLeft">
          <property name="toolTip">
-          <string>Align left sides</string>
+          <string>Выровнять левые стороны</string>
          </property>
          <property name="text">
           <string>AL</string>
@@ -44,7 +44,7 @@
        <item row="0" column="2">
         <widget class="QToolButton" name="alignRight">
          <property name="toolTip">
-          <string>Align right sides</string>
+          <string>Выровнять правые стороны</string>
          </property>
          <property name="text">
           <string>AR</string>
@@ -64,7 +64,7 @@
        <item row="1" column="0">
         <widget class="QToolButton" name="alignTop">
          <property name="toolTip">
-          <string>Align tops</string>
+          <string>Выровнять верхние края</string>
          </property>
          <property name="text">
           <string>AT</string>
@@ -84,7 +84,7 @@
        <item row="1" column="2">
         <widget class="QToolButton" name="alignBottom">
          <property name="toolTip">
-          <string>Align bottoms</string>
+          <string>Выровнять нижние края</string>
          </property>
          <property name="text">
           <string>AB</string>
@@ -104,7 +104,7 @@
        <item row="1" column="1">
         <widget class="QToolButton" name="alignCenterH">
          <property name="toolTip">
-          <string>Align on a horizontal axis</string>
+          <string>Выровнять по горизонтальной оси</string>
          </property>
          <property name="text">
           <string>ACH</string>
@@ -124,7 +124,7 @@
        <item row="0" column="1">
         <widget class="QToolButton" name="alignCenterV">
          <property name="toolTip">
-          <string>Align on a vertical axis</string>
+          <string>Выровнять по вертикальной оси</string>
          </property>
          <property name="text">
           <string>ACV</string>
@@ -144,7 +144,7 @@
        <item row="2" column="1">
         <widget class="QToolButton" name="alignToPath">
          <property name="toolTip">
-          <string>Align to selected path</string>
+          <string>Выровнять по выбранному контуру</string>
          </property>
          <property name="text">
           <string>ATP</string>
@@ -167,13 +167,13 @@
     <item>
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
-       <string>Distribute</string>
+       <string>Распределить</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
         <widget class="QToolButton" name="distributeLeft">
          <property name="toolTip">
-          <string>Distribute left edges equidistantly</string>
+          <string>Равномерно распределить по левым краям</string>
          </property>
          <property name="text">
           <string>DL</string>
@@ -193,7 +193,7 @@
        <item row="0" column="2">
         <widget class="QToolButton" name="distributeRight">
          <property name="toolTip">
-          <string>Distribute right edges equidistantly</string>
+          <string>Равномерно распределить по правым краям</string>
          </property>
          <property name="text">
           <string>DR</string>
@@ -213,7 +213,7 @@
        <item row="1" column="0">
         <widget class="QToolButton" name="distributeTop">
          <property name="toolTip">
-          <string>Distribute top edges equidistantly</string>
+          <string>Равномерно распределить по верхним краям</string>
          </property>
          <property name="text">
           <string>DT</string>
@@ -233,7 +233,7 @@
        <item row="1" column="2">
         <widget class="QToolButton" name="distributeBottom">
          <property name="toolTip">
-          <string>Distribute bottom edges equidistantly</string>
+          <string>Равномерно распределить по нижним краям</string>
          </property>
          <property name="text">
           <string>DB</string>
@@ -253,7 +253,7 @@
        <item row="2" column="1">
         <widget class="QToolButton" name="distributeToPath">
          <property name="toolTip">
-          <string>Distribute to selected path</string>
+          <string>Распределить по выбранному контуру</string>
          </property>
          <property name="text">
           <string>DTP</string>
@@ -273,7 +273,7 @@
        <item row="0" column="1">
         <widget class="QToolButton" name="distributeCenterH">
          <property name="toolTip">
-          <string>Distribute centers equidistantly horizontally</string>
+          <string>Равномерно распределить центры по горизонтали</string>
          </property>
          <property name="text">
           <string>DCH</string>
@@ -293,7 +293,7 @@
        <item row="1" column="1">
         <widget class="QToolButton" name="distributeCenterV">
          <property name="toolTip">
-          <string>Distribute centers equidistantly vertically</string>
+          <string>Равномерно распределить центры по вертикали</string>
          </property>
          <property name="text">
           <string>DCV</string>

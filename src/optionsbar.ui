@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Форма</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <property name="margin">
@@ -25,10 +25,10 @@
      <item>
       <widget class="QPushButton" name="copyInstructions">
        <property name="toolTip">
-        <string>Copy the written instructions to the clipboard</string>
+        <string>Скопировать текстовые инструкции в буфер обмена</string>
        </property>
        <property name="text">
-        <string>Copy Instructions</string>
+        <string>Копировать инструкции</string>
        </property>
       </widget>
      </item>
@@ -48,7 +48,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Zoom:</string>
+        <string>Масштаб:</string>
        </property>
        <property name="buddy">
         <cstring>zoom</cstring>

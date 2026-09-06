@@ -11,14 +11,14 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>&amp;Copy, Mirror and Rotate</string>
+   <string>&amp;Копировать, отразить и повернуть</string>
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout_6">
     <item row="0" column="0">
      <widget class="QGroupBox" name="groupBox_2">
       <property name="title">
-       <string>Copy</string>
+       <string>Копировать</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_5">
        <property name="leftMargin">
@@ -36,7 +36,7 @@
        <item row="2" column="1">
         <widget class="QToolButton" name="copyDown">
          <property name="toolTip">
-          <string>Copy down</string>
+          <string>Копировать вниз</string>
          </property>
          <property name="text">
           <string>D</string>
@@ -56,7 +56,7 @@
        <item row="0" column="1">
         <widget class="QToolButton" name="copyUp">
          <property name="toolTip">
-          <string>Copy up</string>
+          <string>Копировать вверх</string>
          </property>
          <property name="text">
           <string>U</string>
@@ -76,7 +76,7 @@
        <item row="1" column="2">
         <widget class="QToolButton" name="copyRight">
          <property name="toolTip">
-          <string>Copy right</string>
+          <string>Копировать вправо</string>
          </property>
          <property name="text">
           <string>R</string>
@@ -96,7 +96,7 @@
        <item row="1" column="0">
         <widget class="QToolButton" name="copyLeft">
          <property name="toolTip">
-          <string>Copy left</string>
+          <string>Копировать влево</string>
          </property>
          <property name="text">
           <string>L</string>
@@ -119,7 +119,7 @@
     <item row="1" column="0">
      <widget class="QGroupBox" name="groupBox">
       <property name="title">
-       <string>Mirror</string>
+       <string>Отразить</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_3">
        <property name="leftMargin">
@@ -137,7 +137,7 @@
        <item row="0" column="1">
         <widget class="QToolButton" name="mirrorUp">
          <property name="toolTip">
-          <string>Mirror up</string>
+          <string>Отразить вверх</string>
          </property>
          <property name="text">
           <string>U</string>
@@ -157,7 +157,7 @@
        <item row="2" column="1">
         <widget class="QToolButton" name="mirrorDown">
          <property name="toolTip">
-          <string>Mirror down</string>
+          <string>Отразить вниз</string>
          </property>
          <property name="text">
           <string>D</string>
@@ -177,7 +177,7 @@
        <item row="1" column="0">
         <widget class="QToolButton" name="mirrorLeft">
          <property name="toolTip">
-          <string>Mirror left</string>
+          <string>Отразить влево</string>
          </property>
          <property name="text">
           <string>L</string>
@@ -197,7 +197,7 @@
        <item row="1" column="2">
         <widget class="QToolButton" name="mirrorRight">
          <property name="toolTip">
-          <string>Mirror right</string>
+          <string>Отразить вправо</string>
          </property>
          <property name="text">
           <string>R</string>
@@ -220,7 +220,7 @@
     <item row="2" column="0">
      <widget class="QGroupBox" name="groupBox_3">
       <property name="title">
-       <string>Rotate</string>
+       <string>Повернуть</string>
       </property>
       <layout class="QGridLayout" name="gridLayout">
        <property name="leftMargin">
@@ -242,7 +242,7 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rotate 180&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Повернуть на 180&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="text">
           <string>180</string>
@@ -266,7 +266,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rotate 270&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Повернуть на 270&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="text">
           <string>270</string>
@@ -290,7 +290,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Rotate 90&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Повернуть на 90&amp;#0176;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="text">
           <string>90</string>
@@ -310,7 +310,7 @@ p, li { white-space: pre-wrap; }
        <item row="0" column="1">
         <widget class="QToolButton" name="rotateCustom">
          <property name="toolTip">
-          <string>Rotate custom degrees</string>
+          <string>Повернуть на заданный угол</string>
          </property>
          <property name="text">
           <string>C</string>
@@ -336,7 +336,7 @@ p, li { white-space: pre-wrap; }
        <item row="0" column="1">
         <widget class="QPushButton" name="rotateBttn">
          <property name="text">
-          <string>Rotate</string>
+          <string>Повернуть</string>
          </property>
         </widget>
        </item>

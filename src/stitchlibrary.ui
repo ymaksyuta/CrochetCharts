@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>Stitch Library</string>
+   <string>Библиотека петель</string>
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout_2">
    <item>
@@ -27,7 +27,7 @@
        <item>
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>Stitch &amp;Source:</string>
+          <string>Ис&amp;точник петли:</string>
          </property>
          <property name="buddy">
           <cstring>stitchSource</cstring>
@@ -46,7 +46,7 @@
           </sizepolicy>
          </property>
          <property name="text">
-          <string>&amp;More &gt;&gt;</string>
+          <string>&amp;Ещё &gt;&gt;</string>
          </property>
         </widget>
        </item>
@@ -63,14 +63,14 @@
           <string/>
          </property>
          <property name="placeholderText">
-          <string>Filter</string>
+          <string>Фильтр</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QToolButton" name="clearBttn">
          <property name="toolTip">
-          <string>Clear text</string>
+          <string>Очистить текст</string>
          </property>
          <property name="text">
           <string>...</string>
@@ -105,7 +105,7 @@
         </size>
        </property>
        <property name="title">
-        <string>Stitch Set Properties</string>
+        <string>Свойства набора петель</string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
@@ -116,7 +116,7 @@
           <item row="0" column="0">
            <widget class="QLabel" name="label_5">
             <property name="text">
-             <string>Set &amp;Name:</string>
+             <string>&amp;Имя набора:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -132,7 +132,7 @@
           <item row="1" column="0">
            <widget class="QLabel" name="label_4">
             <property name="text">
-             <string>A&amp;uthor:</string>
+             <string>&amp;Автор:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -148,7 +148,7 @@
           <item row="2" column="0">
            <widget class="QLabel" name="label_3">
             <property name="text">
-             <string>&amp;Email:</string>
+             <string>&amp;Эл. почта:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -176,7 +176,7 @@
              </size>
             </property>
             <property name="text">
-             <string>&amp;Organization:</string>
+             <string>&amp;Организация:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -192,7 +192,7 @@
           <item row="4" column="0">
            <widget class="QLabel" name="label_6">
             <property name="text">
-             <string>&amp;Url:</string>
+             <string>&amp;Ссылка:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -220,20 +220,20 @@
      <item>
       <widget class="QPushButton" name="createSet">
        <property name="toolTip">
-        <string>Add a new set of stitches</string>
+        <string>Добавить новый набор петель</string>
        </property>
        <property name="text">
-        <string>&amp;Add Set</string>
+        <string>&amp;Добавить набор</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="removeSet">
        <property name="toolTip">
-        <string>Remove the stitch set current displayed</string>
+        <string>Удалить отображаемый в данный момент набор петель</string>
        </property>
        <property name="text">
-        <string>Remove Set</string>
+        <string>Удалить набор</string>
        </property>
       </widget>
      </item>
@@ -256,30 +256,30 @@
      <item>
       <widget class="QPushButton" name="addStitch">
        <property name="toolTip">
-        <string>Add a new stitch to this set</string>
+        <string>Добавить новую петлю в этот набор</string>
        </property>
        <property name="text">
-        <string>Add Stitch</string>
+        <string>Добавить петлю</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="removeStitch">
        <property name="toolTip">
-        <string>Remove selected stitches from this set</string>
+        <string>Удалить выбранные петли из этого набора</string>
        </property>
        <property name="text">
-        <string>Remove Stitch</string>
+        <string>Удалить петлю</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="addSelected">
        <property name="toolTip">
-        <string>Add the selected stitches to the Default Stitches list</string>
+        <string>Добавить выбранные петли в список петель по умолчанию</string>
        </property>
        <property name="text">
-        <string>Add To List</string>
+        <string>Добавить в список</string>
        </property>
       </widget>
      </item>
@@ -302,10 +302,10 @@
      <item>
       <widget class="QPushButton" name="icons">
        <property name="toolTip">
-        <string>Manage custom icons available to all stitch sets</string>
+        <string>Управление пользовательскими значками, доступными для всех наборов петель</string>
        </property>
        <property name="text">
-        <string>Manage Icons</string>
+        <string>Управление значками</string>
        </property>
       </widget>
      </item>
@@ -328,20 +328,20 @@
      <item>
       <widget class="QPushButton" name="importSet">
        <property name="toolTip">
-        <string>Import a custom stitch set</string>
+        <string>Импортировать пользовательский набор петель</string>
        </property>
        <property name="text">
-        <string>&amp;Import Set</string>
+        <string>&amp;Импортировать набор</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="exportSet">
        <property name="toolTip">
-        <string>Export this stitch set to a stand alone file</string>
+        <string>Экспортировать этот набор петель в отдельный файл</string>
        </property>
        <property name="text">
-        <string>E&amp;xport Set</string>
+        <string>&amp;Экспортировать набор</string>
        </property>
       </widget>
      </item>
@@ -364,20 +364,20 @@
      <item>
       <widget class="QPushButton" name="printSet">
        <property name="toolTip">
-        <string>Print the current stitch set</string>
+        <string>Напечатать текущий набор петель</string>
        </property>
        <property name="text">
-        <string>&amp;Print Set</string>
+        <string>&amp;Печать набора</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="resetLibrary">
        <property name="toolTip">
-        <string>Reset the stitch library to it original state</string>
+        <string>Сбросить библиотеку петель к исходному состоянию</string>
        </property>
        <property name="text">
-        <string>&amp;Reset Library</string>
+        <string>&amp;Сбросить библиотеку</string>
        </property>
       </widget>
      </item>

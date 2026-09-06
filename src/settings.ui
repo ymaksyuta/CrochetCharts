@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Options</string>
+   <string>Параметры</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_3">
    <property name="margin">
@@ -90,7 +90,7 @@
        <item row="2" column="0">
         <widget class="QLabel" name="label_2">
          <property name="text">
-          <string>Ma&amp;ximum Recent Files:</string>
+          <string>Ма&amp;ксимум недавних файлов:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -103,7 +103,7 @@
        <item row="1" column="0">
         <widget class="QLabel" name="label">
          <property name="text">
-          <string>File Location:</string>
+          <string>Расположение файла:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -116,7 +116,7 @@
        <item row="0" column="0">
         <widget class="QLabel" name="label_26">
          <property name="text">
-          <string>Check for Updates on Startup:</string>
+          <string>Проверять обновления при запуске:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -129,10 +129,10 @@
        <item row="3" column="0">
         <widget class="QLabel" name="label_27">
          <property name="toolTip">
-          <string>Offset the pasted selection from the original location</string>
+          <string>Смещать вставляемое выделение относительно исходного положения</string>
          </property>
          <property name="text">
-          <string>Paste Offset:</string>
+          <string>Смещение вставки:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -149,32 +149,32 @@
          </property>
          <item>
           <property name="text">
-           <string>On mouse cursor</string>
+           <string>По курсору мыши</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>None</string>
+           <string>Нет</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Up and Right</string>
+           <string>Вверх и вправо</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Up and Left</string>
+           <string>Вверх и влево</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Down and Right</string>
+           <string>Вниз и вправо</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Down and Left</string>
+           <string>Вниз и влево</string>
           </property>
          </item>
         </widget>
@@ -190,17 +190,17 @@
         <widget class="QComboBox" name="chartStyle">
          <item>
           <property name="text">
-           <string>Blank</string>
+           <string>Пусто</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Rows</string>
+           <string>Ряды</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Rounds</string>
+           <string>Круговые ряды</string>
           </property>
          </item>
         </widget>
@@ -208,7 +208,7 @@
        <item row="10" column="0">
         <widget class="QLabel" name="label_23">
          <property name="text">
-          <string>Alternate Row Colors:</string>
+          <string>Чередовать цвета рядов:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -243,7 +243,7 @@
           </sizepolicy>
          </property>
          <property name="text">
-          <string>Primary</string>
+          <string>Основной</string>
          </property>
          <property name="iconSize">
           <size>
@@ -262,7 +262,7 @@
           </sizepolicy>
          </property>
          <property name="text">
-          <string>Alternate</string>
+          <string>Чередовать</string>
          </property>
          <property name="iconSize">
           <size>
@@ -275,7 +275,7 @@
        <item row="4" column="3">
         <widget class="QLabel" name="label_4">
          <property name="text">
-          <string>Stitches:</string>
+          <string>Петли:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -308,7 +308,7 @@
        <item row="5" column="0">
         <widget class="QLabel" name="label_11">
          <property name="text">
-          <string>Show Chart Center:</string>
+          <string>Показать центр диаграммы:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -331,7 +331,7 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Chart&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Диаграмма&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -339,17 +339,17 @@ p, li { white-space: pre-wrap; }
         <widget class="QComboBox" name="chartRowIndicator">
          <item>
           <property name="text">
-           <string>Dots and Text</string>
+           <string>Точки и текст</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Dots</string>
+           <string>Точки</string>
           </property>
          </item>
          <item>
           <property name="text">
-           <string>Text</string>
+           <string>Текст</string>
           </property>
          </item>
         </widget>
@@ -357,7 +357,7 @@ p, li { white-space: pre-wrap; }
        <item row="13" column="0">
         <widget class="QLabel" name="label_28">
          <property name="text">
-          <string>St&amp;yle:</string>
+          <string>Ст&amp;иль:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -377,7 +377,7 @@ p, li { white-space: pre-wrap; }
        <item row="14" column="0">
         <widget class="QLabel" name="label_25">
          <property name="text">
-          <string>Show Outline:</string>
+          <string>Показать контур:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -406,7 +406,7 @@ p, li { white-space: pre-wrap; }
        <item row="2" column="0">
         <widget class="QLabel" name="label_24">
          <property name="text">
-          <string>Style:</string>
+          <string>Стиль:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -429,7 +429,7 @@ p, li { white-space: pre-wrap; }
        <item row="2" column="3">
         <widget class="QLabel" name="label_5">
          <property name="text">
-          <string>Rows:</string>
+          <string>Ряды:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -442,7 +442,7 @@ p, li { white-space: pre-wrap; }
        <item row="4" column="0">
         <widget class="QLabel" name="label_6">
          <property name="text">
-          <string>Default Stitch:</string>
+          <string>Петля по умолчанию:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -481,7 +481,7 @@ p, li { white-space: pre-wrap; }
        <item row="5" column="3">
         <widget class="QLabel" name="label_10">
          <property name="text">
-          <string>I&amp;ncrease By:</string>
+          <string>Уве&amp;личивать на:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -494,7 +494,7 @@ p, li { white-space: pre-wrap; }
        <item row="10" column="3">
         <widget class="QLabel" name="label_29">
          <property name="text">
-          <string>Cell Height:</string>
+          <string>Высота ячейки:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -507,7 +507,7 @@ p, li { white-space: pre-wrap; }
        <item row="11" column="3">
         <widget class="QLabel" name="label_30">
          <property name="text">
-          <string>Cell Width:</string>
+          <string>Ширина ячейки:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -524,7 +524,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Lucida Grande'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Indicators&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Индикаторы&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -537,7 +537,7 @@ p, li { white-space: pre-wrap; }
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>Indicator Color</string>
+          <string>Цвет индикатора</string>
          </property>
         </widget>
        </item>
@@ -584,7 +584,7 @@ p, li { white-space: pre-wrap; }
        <item row="2" column="3">
         <widget class="QLabel" name="label_7">
          <property name="text">
-          <string>Colu&amp;mn Count:</string>
+          <string>Кол&amp;ичество столбцов:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -620,14 +620,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Color Legend&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Цветовая легенда&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
        <item row="8" column="3">
         <widget class="QLabel" name="label_9">
          <property name="text">
-          <string>Color Prefi&amp;x:</string>
+          <string>Пре&amp;фикс цвета:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -654,7 +654,7 @@ p, li { white-space: pre-wrap; }
        <item row="9" column="0" colspan="2">
         <widget class="QLabel" name="label_13">
          <property name="text">
-          <string>Show Border:</string>
+          <string>Показать рамку:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -670,7 +670,7 @@ p, li { white-space: pre-wrap; }
        <item row="9" column="3">
         <widget class="QLabel" name="label_8">
          <property name="text">
-          <string>Column Count:</string>
+          <string>Количество столбцов:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -696,7 +696,7 @@ p, li { white-space: pre-wrap; }
        <item row="10" column="3">
         <widget class="QLabel" name="colorSortByLbl">
          <property name="text">
-          <string>Sort B&amp;y:</string>
+          <string>Со&amp;ртировать по:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -722,7 +722,7 @@ p, li { white-space: pre-wrap; }
        <item row="4" column="1">
         <widget class="QLabel" name="label_19">
          <property name="text">
-          <string>Show Border:</string>
+          <string>Показать рамку:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -748,7 +748,7 @@ p, li { white-space: pre-wrap; }
        <item row="2" column="1">
         <widget class="QLabel" name="label_15">
          <property name="text">
-          <string>Show Title:</string>
+          <string>Показать заголовок:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -768,7 +768,7 @@ p, li { white-space: pre-wrap; }
        <item row="10" column="1">
         <widget class="QLabel" name="label_12">
          <property name="text">
-          <string>Show Hex &amp;Value:</string>
+          <string>Показать &amp;HEX-значение:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -781,7 +781,7 @@ p, li { white-space: pre-wrap; }
        <item row="8" column="1">
         <widget class="QLabel" name="label_14">
          <property name="text">
-          <string>Show Title:</string>
+          <string>Показать заголовок:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -794,7 +794,7 @@ p, li { white-space: pre-wrap; }
        <item row="5" column="3">
         <widget class="QLabel" name="showStitchWrongSideLbl">
          <property name="text">
-          <string>Show Wrong Side:</string>
+          <string>Показать изнаночную сторону:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -820,7 +820,7 @@ p, li { white-space: pre-wrap; }
        <item row="4" column="3">
         <widget class="QLabel" name="label_17">
          <property name="text">
-          <string>Show Description:</string>
+          <string>Показать описание:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -843,7 +843,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Ubuntu'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Stitch Legend&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Легенда петель&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -880,7 +880,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Stitch Tool&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Инструмент «Петля»&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
@@ -904,14 +904,14 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Angle Tool&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Инструмент «Угол»&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
         </widget>
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label_32">
          <property name="text">
-          <string>Click to change stitch:</string>
+          <string>Нажмите, чтобы изменить петлю:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -924,7 +924,7 @@ p, li { white-space: pre-wrap; }
        <item row="5" column="0">
         <widget class="QLabel" name="label_39">
          <property name="text">
-          <string>Scale around center:</string>
+          <string>Масштабирование вокруг центра:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -934,7 +934,7 @@ p, li { white-space: pre-wrap; }
        <item row="3" column="0">
         <widget class="QLabel" name="label_37">
          <property name="text">
-          <string>Rotate around center:</string>
+          <string>Поворот вокруг центра:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -970,7 +970,7 @@ p, li { white-space: pre-wrap; }
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Scale Tool&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Ubuntu'; font-size:12pt; font-weight:600;&quot;&gt;Инструмент «Масштаб»&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -980,7 +980,7 @@ p, li { white-space: pre-wrap; }
        <item row="1" column="2">
         <widget class="QLabel" name="label_33">
          <property name="text">
-          <string>Center stitches on mouse:</string>
+          <string>Центрировать петли по курсору:</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

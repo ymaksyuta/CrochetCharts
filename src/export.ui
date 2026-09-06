@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Export Charts and Legends</string>
+   <string>Экспорт диаграмм и легенд</string>
   </property>
   <layout class="QGridLayout" name="gridLayout_4">
    <item row="0" column="2">
@@ -60,7 +60,7 @@
       <bool>true</bool>
      </property>
      <property name="title">
-      <string>Export Options</string>
+      <string>Параметры экспорта</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_3">
       <item row="2" column="1">
@@ -82,7 +82,7 @@
       <item row="1" column="0">
        <widget class="QLabel" name="heightLbl">
         <property name="text">
-         <string>Height:</string>
+         <string>Высота:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -95,7 +95,7 @@
       <item row="1" column="2">
        <widget class="QLabel" name="resolutionLbl">
         <property name="text">
-         <string>Resolution:</string>
+         <string>Разрешение:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -124,7 +124,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="selectionLbl">
         <property name="text">
-         <string>Selection:</string>
+         <string>Выделение:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -137,7 +137,7 @@
       <item row="1" column="4">
        <widget class="QLabel" name="pageSizeLbl">
         <property name="text">
-         <string>Page to Chart Si&amp;ze:</string>
+         <string>Ра&amp;змер страницы под диаграмму:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -160,7 +160,7 @@
       <item row="2" column="0">
        <widget class="QLabel" name="widthLbl">
         <property name="text">
-         <string>Width:</string>
+         <string>Ширина:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -186,7 +186,7 @@
       <item row="2" column="4">
        <widget class="QLabel" name="selectionOnlyLbl">
         <property name="text">
-         <string>Selection only:</string>
+         <string>Только выделение:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -223,7 +223,7 @@
       <item row="0" column="4">
        <widget class="QLabel" name="headerFooterLbl">
         <property name="text">
-         <string>Include header &amp; footer:</string>
+         <string>Включить колонтитулы:</string>
         </property>
        </widget>
       </item>
@@ -233,7 +233,7 @@
    <item row="6" column="0" colspan="3">
     <widget class="QGroupBox" name="colorLegendOptions">
      <property name="title">
-      <string>Color Legend Options</string>
+      <string>Параметры цветовой легенды</string>
      </property>
      <layout class="QGridLayout" name="gridLayout">
       <item row="3" column="1">
@@ -259,7 +259,7 @@
       <item row="1" column="2">
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>Color Prefi&amp;x:</string>
+         <string>Пре&amp;фикс цвета:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -285,7 +285,7 @@
       <item row="2" column="2">
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Column Count:</string>
+         <string>Количество столбцов:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -299,17 +299,17 @@
        <widget class="QComboBox" name="colorSortBy">
         <item>
          <property name="text">
-          <string>Age</string>
+          <string>Возраст</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Color</string>
+          <string>Цвет</string>
          </property>
         </item>
         <item>
          <property name="text">
-          <string>Quantity</string>
+          <string>Количество</string>
          </property>
         </item>
        </widget>
@@ -317,7 +317,7 @@
       <item row="3" column="2">
        <widget class="QLabel" name="colorSortByLbl">
         <property name="text">
-         <string>Sort by:</string>
+         <string>Сортировать по:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -330,7 +330,7 @@
       <item row="1" column="0">
        <widget class="QLabel" name="label_10">
         <property name="text">
-         <string>Show Title:</string>
+         <string>Показать заголовок:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -343,7 +343,7 @@
       <item row="2" column="0">
        <widget class="QLabel" name="label_11">
         <property name="text">
-         <string>Show Border:</string>
+         <string>Показать рамку:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -356,7 +356,7 @@
       <item row="3" column="0">
        <widget class="QLabel" name="label_12">
         <property name="text">
-         <string>Show Hex &amp;Value:</string>
+         <string>Показать &amp;HEX-значение:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -386,7 +386,7 @@
    <item row="0" column="1">
     <widget class="QLabel" name="fileTypeLbl">
      <property name="text">
-      <string>File Type:</string>
+      <string>Тип файла:</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -416,13 +416,13 @@
    <item row="5" column="0" colspan="3">
     <widget class="QGroupBox" name="stitchLegendOptions">
      <property name="title">
-      <string>Stitch Legend Options</string>
+      <string>Параметры легенды петель</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="0" column="2">
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>Colu&amp;mn Count:</string>
+         <string>Кол&amp;ичество столбцов:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -448,7 +448,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label_7">
         <property name="text">
-         <string>Show Title:</string>
+         <string>Показать заголовок:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -475,7 +475,7 @@
       <item row="2" column="0">
        <widget class="QLabel" name="label_8">
         <property name="text">
-         <string>Show Border:</string>
+         <string>Показать рамку:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -495,7 +495,7 @@
       <item row="3" column="2">
        <widget class="QLabel" name="showStitchWrongSideLbl">
         <property name="text">
-         <string>Show Wrong Side:</string>
+         <string>Показать изнаночную сторону:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -508,7 +508,7 @@
       <item row="2" column="2">
        <widget class="QLabel" name="label_9">
         <property name="text">
-         <string>Show Description:</string>
+         <string>Показать описание:</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -531,7 +531,7 @@
    <item row="4" column="0" colspan="3">
     <widget class="QGroupBox" name="chartOptions">
      <property name="title">
-      <string>Chart Options</string>
+      <string>Параметры диаграммы</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_5">
       <item row="0" column="1">
@@ -544,7 +544,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label_13">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Текстовая метка</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -554,7 +554,7 @@
       <item row="0" column="2">
        <widget class="QLabel" name="label_14">
         <property name="text">
-         <string>TextLabel</string>
+         <string>Текстовая метка</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -580,7 +580,7 @@
       </sizepolicy>
      </property>
      <property name="title">
-      <string>Header and Footer Options</string>
+      <string>Параметры колонтитулов</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_6">
       <item row="1" column="0">
@@ -592,7 +592,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Header Text</string>
+         <string>Текст верхнего колонтитула</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -602,7 +602,7 @@
       <item row="0" column="1">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Footer Text</string>
+         <string>Текст нижнего колонтитула</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
