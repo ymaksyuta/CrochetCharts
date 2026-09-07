@@ -21,20 +21,31 @@
 #ifndef ERRORHANDLER_H
 #define ERRORHANDLER_H
 
-void errorHandler(QtMsgType type, const char *msg)
+#include <QtGlobal>
+#include <QMessageLogContext>
+#include <QByteArray>
+#include <cstdio>
+#include <cstdlib>
+
+void errorHandler(QtMsgType type, const QMessageLogContext &context, const QString &msg)
 {
+    Q_UNUSED(context);
+    QByteArray localMsg = msg.toLocal8Bit();
     switch (type) {
         case QtDebugMsg:
-            fprintf(stderr, "%s\n", msg);
+            fprintf(stderr, "%s\n", localMsg.constData());
+            break;
+        case QtInfoMsg:
+            fprintf(stderr, "%s\n", localMsg.constData());
             break;
         case QtWarningMsg:
-            fprintf(stderr, "\033[1;33mWarning\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[1;33mWarning\033[0m: %s\n", localMsg.constData());
             break;
         case QtCriticalMsg:
-            fprintf(stderr, "\033[31mCritical\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[31mCritical\033[0m: %s\n", localMsg.constData());
             break;
         case QtFatalMsg:
-            fprintf(stderr, "\033[31mFatal\033[0m: %s\n", msg);
+            fprintf(stderr, "\033[31mFatal\033[0m: %s\n", localMsg.constData());
             abort();
     }
 }

@@ -21,6 +21,7 @@
 #include "textview.h"
 
 #include <QDebug>
+#include <QRegularExpression>
 #include "settings.h"
 #include "scene.h"
 
@@ -197,13 +198,13 @@ QString TextView::cleanToken(QString token)
     if(token.startsWith("["))
         token.replace("[", "");
 
-    if(token.contains(QRegExp("\\].{,}$")))
-        token.replace(QRegExp("\\].{,}"), "");
+    if(token.contains(QRegularExpression("\\].*$")))
+        token.replace(QRegularExpression("\\].*"), "");
 
     if(token.startsWith("*"))
         token.replace("*", "");
-    if(token.contains(QRegExp(";.{,}$")))
-        token.replace(QRegExp(";.{,}"), "");
+    if(token.contains(QRegularExpression(";.*$")))
+        token.replace(QRegularExpression(";.*"), "");
 
     return token;
 }

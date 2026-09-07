@@ -39,6 +39,7 @@
 
 #include "debug.h"
 #include <QDialog>
+#include <QMimeData>
 #include <QMessageBox>
 #include <QFileDialog>
 #include <QInputDialog>
@@ -356,7 +357,7 @@ void MainWindow::reloadLayerContent(QList<ChartLayer*>& layers, ChartLayer* sele
 		else
 			item->setCheckState(Qt::Unchecked);
 		
-		item->setData(qVariantFromValue((void*)layer), Qt::UserRole+5);
+		item->setData(QVariant::fromValue((void*)layer), Qt::UserRole+5);
 		
 		if (layer == selected)
 			selecteditem = item;
@@ -818,8 +819,8 @@ void MainWindow::selectColor(QModelIndex index)
 
 void MainWindow::filterStitchList(QString newText)
 {
-    QRegExp regExp(newText, Qt::CaseInsensitive, QRegExp::FixedString);
-    mProxyModel->setFilterRegExp(regExp);
+    mProxyModel->setFilterCaseSensitivity(Qt::CaseInsensitive);
+    mProxyModel->setFilterFixedString(newText);
 }
 
 void MainWindow::clearStitchFilter()

@@ -141,7 +141,7 @@ void File_v2::loadColors(QXmlStreamReader *stream)
 
     mw->patternColors().clear();
 
-    while(!(stream->isEndElement() && stream->name() == "colors")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("colors"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 
@@ -161,7 +161,7 @@ void File_v2::loadChart(QXmlStreamReader *stream)
     CrochetTab *tab = 0;
     QString tabName = "", defaultSt = "";
 
-    while(!(stream->isEndElement() && stream->name() == "chart")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("chart"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 
@@ -270,7 +270,7 @@ void File_v2::loadChart(QXmlStreamReader *stream)
 
 void File_v2::loadGrid(QXmlStreamReader *stream, Scene *scene)
 {
-    while(!(stream->isEndElement() && stream->name() == "grid")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("grid"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 
@@ -303,7 +303,7 @@ void File_v2::loadIndicator(CrochetTab *tab, QXmlStreamReader *stream)
 	qreal rotation = 0, scaleX = 1, scaleY = 1;
     int group = -1;
 	unsigned int layer = 0;
-    while(!(stream->isEndElement() && stream->name() == "indicator")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("indicator"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 
@@ -411,7 +411,7 @@ void File_v2::loadChartImage(CrochetTab* tab, QXmlStreamReader* stream)
             m31 = 0, m32 = 0, m33 = 1;
 	QString filename;
 
-    while(!(stream->isEndElement() && stream->name() == "chartimage")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("chartimage"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 		
@@ -511,7 +511,7 @@ void File_v2::loadCell(CrochetTab *tab, QXmlStreamReader *stream)
             m21 = 0, m22 = 1, m23 = 0,
             m31 = 0, m32 = 0, m33 = 1;
 			
-    while(!(stream->isEndElement() && stream->name() == "cell")) {
+    while(!(stream->isEndElement() && stream->name() == QLatin1String("cell"))) {
         stream->readNext();
         QString tag = stream->name().toString();
 

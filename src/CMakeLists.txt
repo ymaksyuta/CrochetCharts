@@ -1,4 +1,4 @@
-include_directories(${QT_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
 file(GLOB crochet_srcs "*.cpp")
 file(GLOB crochet_uis "*.ui")
@@ -8,8 +8,8 @@ set(crochet_resources
     ../stitches/stitches.qrc
     )
 
-qt4_add_resources(crochet_rcc_srcs ${crochet_resources})
-qt4_wrap_ui(crochet_ui_h ${crochet_uis})
+qt6_add_resources(crochet_rcc_srcs ${crochet_resources})
+qt6_wrap_ui(crochet_ui_h ${crochet_uis})
 
 if(WIN32)
     #generate the embeded icon for the exe file.
@@ -18,15 +18,9 @@ if(WIN32)
     set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
     set(crochet_win "${CMAKE_SOURCE_DIR}/crochet.rc")
 
-    set(QT_WIN_LIBS "C://qt//4.8.5//bin")
-    set(MINGW_LIBS "C://MinGW-4.4//bin")
-    
-    set(QT_LIBS_WINDOWS "${QT_WIN_LIBS}//QtSvg4.dll" "${QT_WIN_LIBS}//QtCore4.dll" "${QT_WIN_LIBS}//QtGui4.dll"
-                        "${QT_WIN_LIBS}//QtNetwork4.dll" "${QT_WIN_LIBS}//QtXml4.dll")
-    set(QT_DEPS_WINDOWS "${MINGW_LIBS}//libgcc_s_dw2-1.dll" "${MINGW_LIBS}//mingwm10.dll"
-                        "${CMAKE_SOURCE_DIR}/resources/qt.conf")
-
-    set(QT_PLUGINS_WINDOWS "${QT_PLUGINS_DIR}/imageformats" "${QT_PLUGINS_DIR}/accessible" "${QT_PLUGINS_DIR}/iconengines")
+    # Путь к Qt6, MinGW-либам больше не нужен: windeployqt в CI сам
+    # разложит все нужные dll рядом с exe (см. .github/workflows/build.yml).
+    set(QT_DEPS_WINDOWS "${CMAKE_SOURCE_DIR}/resources/qt.conf")
 
 else()
 
@@ -42,7 +36,8 @@ else()
             ${crochet_version} ${crochet_win} ${crochet_mac} ${crochet_nix})
 endif()
 
-target_link_libraries(${EXE_NAME} ${QT_LIBRARIES})
+target_link_libraries(${EXE_NAME}
+    Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Svg Qt6::SvgWidgets Qt6::Network Qt6::PrintSupport)
 
 if(APPLE)
     #install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME} DESTINATION ../MacOS)
@@ -72,6 +67,7 @@ else()
 endif()
 
 if(WIN32)
-    install(PROGRAMS ${QT_LIBS_WINDOWS} ${QT_DEPS_WINDOWS} DESTINATION bin)
-    install(DIRECTORY ${QT_PLUGINS_WINDOWS} DESTINATION plugins)
+    install(PROGRAMS ${QT_DEPS_WINDOWS} DESTINATION bin)
+    # Qt6 dll и плагины на Windows раскладываются через windeployqt
+    # (см. .github/workflows/build.yml), а не через ручной список файлов.
 endif()

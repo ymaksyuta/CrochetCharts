@@ -47,7 +47,7 @@ void StitchPaletteDelegate::paint(QPainter* painter, const QStyleOptionViewItem 
     if(option.state & QStyle::State_Selected)
         painter->fillRect(option.rect, option.palette.highlight());
     else if(option.state & QStyle::State_MouseOver)
-        painter->fillRect(option.rect, option.palette.highlight().color().light(190));
+        painter->fillRect(option.rect, option.palette.highlight().color().lighter(190));
 
     if(index.column() == 0) {
         painter->drawText(rect.left() + pad, rect.top() + option.fontMetrics.height(), s->name());  

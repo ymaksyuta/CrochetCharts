@@ -205,7 +205,7 @@ void StitchSet::loadIcons(QDataStream* in)
 
 void StitchSet::loadXmlStitchSet(QXmlStreamReader* stream, bool loadIcons)
 {
-    while (!(stream->isEndElement() && stream->name() == "stitch_set"))
+    while (!(stream->isEndElement() && stream->name() == QLatin1String("stitch_set")))
     {
         stream->readNext();
         if (stream->isStartElement()) {
@@ -232,7 +232,7 @@ void StitchSet::loadXmlStitch(QXmlStreamReader* stream, bool loadIcon)
 {
     Stitch* s = new Stitch();
 
-    while (!(stream->isEndElement() && stream->name() == "stitch"))
+    while (!(stream->isEndElement() && stream->name() == QLatin1String("stitch")))
     {
         stream->readNext();
         if (stream->isStartElement()) {
@@ -636,7 +636,8 @@ void StitchSet::reset()
     foreach(Stitch* s, mStitches)
         s->isBuiltIn = true;
 
-    QAbstractItemModel::reset();
+    QAbstractItemModel::beginResetModel();
+    QAbstractItemModel::endResetModel();
 }
 
 void StitchSet::reloadStitchIcons()

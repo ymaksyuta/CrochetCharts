@@ -61,7 +61,7 @@ StitchLibraryUi::StitchLibraryUi(QWidget* parent)
     ui->listView->setItemDelegate(delegate);
 
     setDialogSize();
-    ui->listView->horizontalHeader()->setClickable(true);
+    ui->listView->horizontalHeader()->setSectionsClickable(true);
     ui->listView->horizontalHeader()->setSortIndicatorShown(true);
 
     //TODO: Wrong Side.
@@ -387,7 +387,7 @@ void StitchLibraryUi::printStitchSet()
     // paint cells
     for (int r = 0; r < rows; ++r) {
 
-        if(rowHeight + ui->listView->rowHeight(r) > (printer.pageRect().height() - 35)) {
+        if(rowHeight + ui->listView->rowHeight(r) > (printer.pageRect(QPrinter::DevicePixel).height() - 35)) {
             printer.newPage();
             rowHeight = 35;
         }
@@ -427,8 +427,8 @@ void StitchLibraryUi::updateRowSizes()
 
 void StitchLibraryUi::filterStitchList(QString newText)
 {
-    QRegExp regExp(newText, Qt::CaseInsensitive, QRegExp::FixedString);
-    mProxyModel->setFilterRegExp(regExp);
+    mProxyModel->setFilterCaseSensitivity(Qt::CaseInsensitive);
+    mProxyModel->setFilterFixedString(newText);
     updateRowSizes();
 }
 

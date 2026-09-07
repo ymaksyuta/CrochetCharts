@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.6)
+cmake_minimum_required(VERSION 3.16)
 if(APPLE OR WIN32)
     project("Crochet Charts")
 else()
@@ -13,8 +13,9 @@ else()
     set(EXE_NAME ${PROJECT_NAME})
 endif()
 
-#enable c++11
-set (CMAKE_CXX_FLAGS "--std=gnu++11 ${CMAKE_CXX_FLAGS}")
+#Qt6 requires C++17
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Appends the cmake/modules path to MAKE_MODULE_PATH variable...
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
@@ -46,13 +47,14 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules/version.cpp.in
                 ${CMAKE_CURRENT_BINARY_DIR}/version.cpp)
 set(crochet_version "${CMAKE_CURRENT_BINARY_DIR}/version.cpp")
 
-find_package(Qt4 REQUIRED)
-
-add_definitions(${QT_DEFINITIONS})
-
 option(UNIT_TESTING  "Build the test libraries for this software" OFF)
 option(DOCS "Create docbook documentation" OFF)
 option(DOXYGEN "Create Doxygen documentation" OFF)
+
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Svg SvgWidgets Network PrintSupport)
+if(UNIT_TESTING)
+    find_package(Qt6 REQUIRED COMPONENTS Test)
+endif()
 
 message("-------------------------------------------------------")
 message(STATUS ${PROJECT_NAME} " Version: " ${VERSION})
@@ -65,22 +67,11 @@ message(STATUS "Build flags: ${CMAKE_CXX_FLAGS}")
 message(STATUS "Linker flags: ${CMAKE_EXE_LINKER_FLAGS}")
 message("-------------------------------------------------------")
 
-include_directories(${QT_INCLUDES} ${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
-
-#More info see: http://cmake.org/cmake/help/cmake2.6docs.html#module:FindQt4
-if(WIN32)
-    set(QT_USE_QTMAIN true)
-endif()
-
-set(QT_USE_QTSVG true)
-#set(QT_USE_QTOPENGL true)
-set(QT_USE_QTNETWORK true)
-include(${QT_USE_FILE})
-
-#QT4_CREATE_TRANSLATION( qm_files directories ... sources ... ts_files ... OPTIONS ...)
-#QT4_ADD_TRANSLATION( qm_files ts_files ... )
+include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_CURRENT_SOURCE_DIR})
 
 set(CMAKE_AUTOMOC TRUE)
+set(CMAKE_AUTOUIC TRUE)
+set(CMAKE_AUTORCC TRUE)
 
 ###################################################################################
 #CPack includes to create installers

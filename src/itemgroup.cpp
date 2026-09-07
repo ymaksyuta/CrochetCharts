@@ -20,14 +20,17 @@
  \****************************************************************************/
 #include "itemgroup.h"
 #include <QPainter>
+#include <QGraphicsScene>
 #include <QGraphicsSceneEvent>
 #include "ChartItemTools.h"
 #include "debug.h"
 
 ItemGroup::ItemGroup(QGraphicsItem *parent, QGraphicsScene *scene)
-    : QGraphicsItemGroup( parent, scene),
+    : QGraphicsItemGroup( parent),
     mScale(QPointF(1.0, 1.0))
 {
+    if (scene)
+        scene->addItem(this);
     setTransform(QTransform(1,0,0,0,1,0,0,0,1));
     setPos(0, 0);
 	setTransformOriginPoint(0, 0);

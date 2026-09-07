@@ -88,10 +88,10 @@ CrochetTab::CrochetTab(Scene::ChartStyle style, int defEditMode, QString defStit
     tl->addWidget(mView);
     tl->addWidget(w);
 
-    ui->horizontalLayout->setMargin(0);
+    ui->horizontalLayout->setContentsMargins(0, 0, 0, 0);
        
-    l->setMargin(0);
-    tl->setMargin(0);
+    l->setContentsMargins(0, 0, 0, 0);
+    tl->setContentsMargins(0, 0, 0, 0);
     w->setContentsMargins(0, 0, 0, 0);
     
     setContentsMargins(0, 0, 0, 0);

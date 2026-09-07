@@ -20,10 +20,10 @@
  \****************************************************************************/
 #include "updater.h"
 
-#include <QtNetwork/QHttp>
 #include <QtNetwork/QNetworkRequest>
 
 #include <QDesktopServices>
+#include <QStandardPaths>
 
 #include <QFile>
 #include <QFileInfo>
@@ -102,7 +102,7 @@ void Updater::httpFinished()
         qWarning() << "Failed to connect to server.";
     } else {
 
-        QStringList urls = data.split("::", QString::SkipEmptyParts);
+        QStringList urls = data.split("::", Qt::SkipEmptyParts);
         if(urls.count() == 2) {
             QMessageBox msgbox(this);
             msgbox.setIcon(QMessageBox::Information);
@@ -139,7 +139,7 @@ void Updater::httpReadyRead()
 void Updater::downloadInstaller(QUrl url)
 {   
     QString fName = url.path().split("/").last();
-    QString path = QDesktopServices::storageLocation(QDesktopServices::TempLocation);
+    QString path = QStandardPaths::writableLocation(QStandardPaths::TempLocation);
     installer = new QFile(path + "/" + fName);
     
     if (!installer->open(QIODevice::WriteOnly)){

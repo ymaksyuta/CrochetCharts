@@ -23,7 +23,7 @@ along with Crochet Charts. If not, see <http://www.gnu.org/licenses/>.
 
 #include "version.h"
 #include <QString>
-#include <QRegExp>
+#include <QRegularExpression>
 #include <qobject.h>
 
 /**
@@ -50,7 +50,7 @@ public:
     const QString appVersionShort;
     const QString appBuildInfo;
     
-    const QRegExp emailRegExp;
+    const QRegularExpression emailRegExp;
     
     const QString liveUpdatePage;
     const QString liveUpdatePageVals;

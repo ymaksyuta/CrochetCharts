@@ -33,7 +33,7 @@ AppInfo::AppInfo() :
     appVersionShort(gGIT_VERSION_SHORT),
     appBuildInfo(QString(__DATE__) + " " + QString(__TIME__)),
 
-    emailRegExp(QRegExp("[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,4}")),
+    emailRegExp(QRegularExpression("[a-zA-Z0-9._%+-]+@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,4}")),
 
     liveUpdatePage("http://stitchworkssoftware.com/custom/update.php"),
     liveUpdatePageVals("?sws_software=%1&sws_version=%2&sws_os=%3&sws_sn=%4&sws_arch=%5&ver=2"),

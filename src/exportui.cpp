@@ -30,6 +30,7 @@
 #include <QFileDialog>
 
 #include <QPrinter> //for pdf
+#include <QPageSize>
 #include <QSvgGenerator> //for svg
 
 #include "crochettab.h"
@@ -433,7 +434,7 @@ void ExportUi::exportLegendPdf()
 
     QSizeF size = scene->sceneRect().size();
     if(pageToChartSize)
-        printer->setPaperSize(size, QPrinter::Point);
+        printer->setPageSize(QPageSize(size, QPageSize::Point));
 
     p->begin(printer);
 	
@@ -533,7 +534,7 @@ void ExportUi::exportPdf()
 
     QSizeF size = ui->view->scene()->sceneRect().size();
     if(pageToChartSize)
-        printer->setPaperSize(size, QPrinter::Point);
+        printer->setPageSize(QPageSize(size, QPageSize::Point));
     
     p->begin(printer);
     

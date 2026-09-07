@@ -86,7 +86,7 @@ SetChartZLayer::SetChartZLayer(ChartImage* image, const QString& layer, QUndoCom
 {
     ci = image;
     newLayer = layer;
-    oldLayer = ci->layer();
+    oldLayer = QString::number(ci->layer());
     setText(QObject::tr("change image layer"));
 }
 
@@ -262,7 +262,7 @@ void SetSelectionRotation::rotate(Scene *scene, qreal degrees,
     QGraphicsItemGroup *g = scene->createItemGroup(items);
 	ChartItemTools::setRotationPivot(g, pivotPoint);
 	ChartItemTools::setRotation(g, newAngle);
-	QList<QGraphicsItem*> childs = g->children();
+	QList<QGraphicsItem*> childs = g->childItems();
     scene->destroyItemGroup(g);
 	foreach (QGraphicsItem* c, childs) {
 		ChartItemTools::recalculateTransformations(c);

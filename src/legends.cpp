@@ -95,9 +95,9 @@ void ColorLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* optio
     QList<qint64> sortedKeys = sortedColors.keys();
         
     int colWidth = Legend::margin + Legend::iconWidth + Legend::margin +
-                    painter->fontMetrics().width(prefix + sortedColors.count()) + Legend::margin;
+                    painter->fontMetrics().horizontalAdvance(prefix + QString::number(sortedColors.count())) + Legend::margin;
     if(showHexValues)
-        colWidth += painter->fontMetrics().width(" - #FFFFFF") + Legend::margin;
+        colWidth += painter->fontMetrics().horizontalAdvance(" - #FFFFFF") + Legend::margin;
 
     //if we have more columns then items don't draw a really large white space.
     int cols = (sortedKeys.count() < columnCount) ? sortedKeys.count() : columnCount;
@@ -119,7 +119,7 @@ void ColorLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* optio
         titleHeight += Legend::margin;
 
         //make sure the box is always wide enough to hold the title.
-        int titleWidth =  Legend::margin + painter->fontMetrics().width(titleText) + Legend::margin;
+        int titleWidth =  Legend::margin + painter->fontMetrics().horizontalAdvance(titleText) + Legend::margin;
         if(titleWidth > imageWidth)
             imageWidth = titleWidth;
         
@@ -146,7 +146,7 @@ void ColorLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* optio
         painter->drawText(x, y, prefix + QString::number(i + 1));
         
         if(showHexValues) {
-            x += painter->fontMetrics().width(prefix + QString::number(i + 1));
+            x += painter->fontMetrics().horizontalAdvance(prefix + QString::number(i + 1));
             painter->drawText(x, y, " - " + hex.toUpper());
         }
     }
@@ -218,9 +218,9 @@ void StitchLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* opti
         //FIXME: set a reasonable max width for each column and default to it if bigger & cut the text into multiple rows.
         //TODO: also check the width of the wrong side...
         //FIXME: doesn't always give correct results.
-        int itemWidth = Legend::margin + size.width() + Legend::margin + painter->fontMetrics().width(s->name());
+        int itemWidth = Legend::margin + size.width() + Legend::margin + painter->fontMetrics().horizontalAdvance(s->name());
         if(showDescription)
-            itemWidth += painter->fontMetrics().width(" - " + s->description());
+            itemWidth += painter->fontMetrics().horizontalAdvance(" - " + s->description());
         widths.append(itemWidth);
         if(itemWidth > widestCol)
             widestCol = itemWidth;
@@ -270,7 +270,7 @@ void StitchLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* opti
         titleHeight += Legend::margin;
         
         //make sure the box is always wide enough to hold the title.
-        int titleWidth =  Legend::margin + painter->fontMetrics().width(titleText) + Legend::margin;
+        int titleWidth =  Legend::margin + painter->fontMetrics().horizontalAdvance(titleText) + Legend::margin;
         if(titleWidth > imageWidth)
             imageWidth = titleWidth;
         
@@ -330,7 +330,7 @@ void StitchLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* opti
         painter->drawText(x,y, s->name());
         
         if(showDescription) {
-            int x1 = x + painter->fontMetrics().width(s->name());
+            int x1 = x + painter->fontMetrics().horizontalAdvance(s->name());
             painter->drawText(x1,y, " - " + s->description());
         }
         
@@ -342,7 +342,7 @@ void StitchLegend::paint(QPainter* painter, const QStyleOptionGraphicsItem* opti
                 if(ws) {
                     painter->drawText(x,y, ws->name());
                     if(showDescription) {
-                        int x1 = x + painter->fontMetrics().width(s->name());
+                        int x1 = x + painter->fontMetrics().horizontalAdvance(s->name());
                         painter->drawText(x1,y," - " + ws->description());
                     }
                 }

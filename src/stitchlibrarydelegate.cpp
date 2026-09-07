@@ -78,7 +78,7 @@ void StitchLibraryDelegate::paint(QPainter *painter, const QStyleOptionViewItem 
         if(option.state & QStyle::State_Selected)
             painter->fillRect(option.rect, option.palette.highlight());
         else if(option.state & QStyle::State_MouseOver)
-            painter->fillRect(option.rect, option.palette.highlight().color().light(190));
+            painter->fillRect(option.rect, option.palette.highlight().color().lighter(190));
 
         QRectF rect = QRectF((qreal)option.rect.x(), (qreal)option.rect.y(),
                              (qreal)option.rect.width(), (qreal)option.rect.height());
@@ -107,7 +107,7 @@ void StitchLibraryDelegate::paint(QPainter *painter, const QStyleOptionViewItem 
     } else if(index.column() == 5) {
 
         if(option.state & QStyle::State_MouseOver)
-            painter->fillRect(option.rect, option.palette.highlight().color().light(190));
+            painter->fillRect(option.rect, option.palette.highlight().color().lighter(190));
 
         bool checked = index.data(Qt::EditRole).toBool();
 

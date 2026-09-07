@@ -37,9 +37,11 @@
 #include "ChartItemTools.h"
 
 Indicator::Indicator(QGraphicsItem* parent, QGraphicsScene* scene)
-    : QGraphicsTextItem(parent, scene),
+    : QGraphicsTextItem(parent),
       highlight(false)
 {
+    if (scene)
+        scene->addItem(this);
     setFlag(QGraphicsItem::ItemIsMovable);
     setFlag(QGraphicsItem::ItemIsSelectable);
     setFlag(QGraphicsItem::ItemIsFocusable);
