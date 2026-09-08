@@ -48,7 +48,14 @@ jobs:
       - name: Build
         shell: pwsh
         run: |
-          cmake --build "${{ env.BUILD_DIR }}" --config ${{ env.BUILD_TYPE }} --parallel
+          cmake --build "${{ env.BUILD_DIR }}" --config ${{ env.BUILD_TYPE }} --parallel 2>&1 | Tee-Object -FilePath build-log.txt
+          if ($LASTEXITCODE -ne 0) {
+            Select-String -Path build-log.txt -Pattern "error" | ForEach-Object {
+              $line = $_.Line -replace '::', ' - '
+              Write-Output "::error::$line"
+            }
+            exit $LASTEXITCODE
+          }
 
       - name: Deploy Qt runtime dependencies
         shell: pwsh
