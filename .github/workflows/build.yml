@@ -1,0 +1,79 @@
+name: Build (Windows, Qt6)
+
+on:
+  push:
+    branches: [ main ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write   # нужно, чтобы softprops/action-gh-release мог публиковать релиз
+
+env:
+  BUILD_TYPE: Release
+  BUILD_DIR: build
+  QT_VERSION: '6.8.*'   # wildcard подтягивает последний патч 6.8.x; фиксируйте точную версию при необходимости
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # windows-latest = VS2022, поэтому берём соответствующий kit Qt
+      - name: Install Qt ${{ env.QT_VERSION }}
+        uses: jurplel/install-qt-action@v4
+        with:
+          version: ${{ env.QT_VERSION }}
+          host: 'windows'
+          target: 'desktop'
+          arch: 'win64_msvc2022_64'
+          modules: 'qtsvg'
+          cache: true
+
+      - name: Setup MSVC dev environment
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Configure (CMake)
+        shell: pwsh
+        run: |
+          cmake -B "${{ env.BUILD_DIR }}" -G "Ninja" `
+            -DCMAKE_BUILD_TYPE=${{ env.BUILD_TYPE }} `
+            -DCMAKE_PREFIX_PATH="${{ env.QT_ROOT_DIR }}"
+          # v4 install-qt-action больше не задаёт Qt6_DIR — актуальная
+          # переменная называется QT_ROOT_DIR (README_upgrade_guide.md).
+
+      - name: Build
+        shell: pwsh
+        run: |
+          cmake --build "${{ env.BUILD_DIR }}" --config ${{ env.BUILD_TYPE }} --parallel
+
+      - name: Deploy Qt runtime dependencies
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force -Path dist | Out-Null
+          # Итоговый бинарник — Crochet_Charts.exe (EXE_NAME из CMakeLists.txt на Windows)
+          Get-ChildItem -Path "${{ env.BUILD_DIR }}" -Recurse -Filter "Crochet_Charts.exe" |
+            Copy-Item -Destination dist -Force
+          Get-ChildItem -Path dist -Filter *.exe | ForEach-Object {
+            windeployqt --release $_.FullName
+          }
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CrochetCharts-windows-qt6
+          path: dist/*
+          if-no-files-found: error
+
+      - name: Create GitHub Release (on tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
