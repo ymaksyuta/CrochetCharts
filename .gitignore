@@ -14,3 +14,6 @@ Makefile.Debug
 Makefile.Release
 object_script.CrochetCharts.Debug
 object_script.CrochetCharts.Release
+
+# "build*" above is meant for build directories, not CI workflow files
+!.github/workflows/*.yml
