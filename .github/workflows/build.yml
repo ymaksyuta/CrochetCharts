@@ -61,8 +61,10 @@ jobs:
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Force -Path dist | Out-Null
-          # Итоговый бинарник — Crochet_Charts.exe (EXE_NAME из CMakeLists.txt на Windows)
-          Get-ChildItem -Path "${{ env.BUILD_DIR }}" -Recurse -Filter "Crochet_Charts.exe" |
+          # Реальное имя — "Crochet Charts.exe" (OUTPUT_NAME переопределён
+          # в src/CMakeLists.txt на PROJECT_NAME с пробелом), поэтому берём
+          # любой .exe в build/, а не жёстко заданное имя.
+          Get-ChildItem -Path "${{ env.BUILD_DIR }}" -Recurse -Filter "*.exe" |
             Copy-Item -Destination dist -Force
           Get-ChildItem -Path dist -Filter *.exe | ForEach-Object {
             windeployqt --release $_.FullName
