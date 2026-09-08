@@ -13,9 +13,7 @@ qt6_wrap_ui(crochet_ui_h ${crochet_uis})
 
 if(WIN32)
     #generate the embeded icon for the exe file.
-    set(CMAKE_RC_COMPILER_INIT windres)
     enable_language(RC)
-    set(CMAKE_RC_COMPILE_OBJECT "<CMAKE_RC_COMPILER> <FLAGS> -O coff <DEFINES> -i <SOURCE> -o <OBJECT>")
     set(crochet_win "${CMAKE_SOURCE_DIR}/crochet.rc")
 
     # Путь к Qt6, MinGW-либам больше не нужен: windeployqt в CI сам
